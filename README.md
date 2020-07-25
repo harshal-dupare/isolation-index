@@ -60,3 +60,5 @@ ________
 ## Algorithm Time Complexity
 
 * The new proposed algorithm has complexity of `O( V+E )` per node which is very significant improvement on the previous algorithm which had complexity of `O( V*E*logE + V )` per node.
+
+reference for complexity : http://igraph.wikidot.com/algorithm-space-time-complexity
