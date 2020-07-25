@@ -1,7 +1,12 @@
-# <center> Isolation Index </center>
+# <center>Isolation Index</center>
 ___________
 
-## Collaboration between IIT Kharagpur & INPE - Instituto Nacional de Pesquisas Espaciais through Foregin Training Program  (FTP) of International Relations Cell IIT Kharagpur for the year 2019-2020.
+## Collaboration between IIT Kharagpur & INPE - Instituto Nacional de Pesquisas Espaciais through Foregin Training Program  (FTP) of International Relations Cell IIT Kharagpur for the year 2019-2020.k
+## Harshal Dupare | 18MA20015 | Sophomore at IIT Kharagpur
+
+____________
+## Introduction
+Given a graph <img src="https://render.githubusercontent.com/render/math?math=G = (N,L)">, let <img src="https://render.githubusercontent.com/render/math?math=L_k"> be the set of edges connected to a node <img src="https://render.githubusercontent.com/render/math?math=k"> where <img src="https://render.githubusercontent.com/render/math?math=k \in N">. The isolation index of the node <img src="https://render.githubusercontent.com/render/math?math=k"> is given by <img src="https://render.githubusercontent.com/render/math?math=Q_k">, which is the number of 'inﬁnite length paths' between any pair of nodes in the graph <img src="https://render.githubusercontent.com/render/math?math=H = (N,(L-L_k))">. This is equivalent to the number of disconnected pairs of nodes (i.e. there does not exist a path joining one node to another). The intuition behind the Isolation index is the following: it quantifies the inaccessibility in the network when a specific element (node or edges) is disconnected, like in a flooding or construction work. 
 
 ____________
 ## Algorithm's Pseudocode:
@@ -15,7 +20,7 @@ Isolation_Index(G,v):
     for component_size in component_sizes
            total <- total - component_size
            isolation_index_v <- isolation_index_v + 2*total*component_size
-     return isolation_index_v
+    return isolation_index_v
 ```
 
 _________
