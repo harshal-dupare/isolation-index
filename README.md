@@ -1,8 +1,10 @@
 # <center>Isolation Index</center>
 ___________
 
-## Collaboration between IIT Kharagpur & INPE - Instituto Nacional de Pesquisas Espaciais through Foregin Training Program  (FTP) of International Relations Cell IIT Kharagpur for the year 2019-2020.k
-## Harshal Dupare | 18MA20015 | Sophomore at IIT Kharagpur
+## Collaboration between IIT Kharagpur & INPE - Instituto Nacional de Pesquisas Espaciais through Foregin Training Program  (FTP) of International Relations Cell IIT Kharagpur for the year 2019-2020.
+## Under Guidance of Prof. Leonardo B. L. Santos, National Center for Monitoring and Early Warning of Natural Disasters (Cemaden), Sao Jose dos Campos/SP, Brazil
+## Jeferson Feitosa, National Institute for Space Research (INPE), Cachoeira Paulista/SP, Brazil
+## Harshal Dupare, 18MA20015, Sophomore at Indian Institure of Technology Kharagpur, India
 
 ____________
 ## Introduction
@@ -53,3 +55,8 @@ _________
 7. Moving on to the contributions from the next component, hence removing the <img src="https://render.githubusercontent.com/render/math?math=1^{st}"> component as it's contribution is already taken into account. Repeat this process ( from 5/6 )  for all other components and adding the contribution from each component gives the Isolation index.
 
 ![](https://github.com/harshal3d/isolation-index/blob/master/Diagrams/moving_on_to_next_cluster.png)
+
+________
+## Algorithm Time Complexity
+
+* The new proposed algorithm has complexity of `O( V+E )` per node which is very significant improvement on the previous algorithm which had complexity of `O( V*(E * logE + V) )` per node.
