@@ -41,13 +41,17 @@ class GraphMaking:
     def isolation(self):
 
         base_components_sizes = self.graph.components().sizes() #List of the sizes of components
-        total = self.graph.order
+        total = self.order
         max_isolation_index=total*(total-1)
         base_isolation_index = 0
         # looping through all components and counting unreachable pairs of vertices in newly modified graph
         for c in base_components_sizes:
             total = total - c
             base_isolation_index+= 2*c*total
+
+        max_isolation_base_gap=max_isolation_index - base_isolation_index
+        if max_isolation_index == base_isolation_index:
+            max_isolation_base_gap=1
 
         for i in range(0,self.order):
             self.accumulates_infinities = 0
@@ -67,7 +71,7 @@ class GraphMaking:
             for c in components_sizes:
                 total = total - c
                 count+= 2*c*total
-            self.infinities.append(float((count-base_isolation_index)/(max_isolation_index-base_isolation_index)))
+            self.infinities.append(float((count-base_isolation_index)/max_isolation_base_gap))
 
     def create_results(self):
         output_local = open('output\output_'+self.filee+'_normalized.txt', 'a')
