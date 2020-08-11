@@ -12,7 +12,7 @@ Given a graph <img src="https://render.githubusercontent.com/render/math?math=G 
 
 ____________
 ## Algorithm's Pseudocode:
-
+**Isolation Index**
 ```
 Isolation_Index(G,v):
     H <- G.disconnect_node(v)
@@ -23,6 +23,22 @@ Isolation_Index(G,v):
            total <- total - component_size
            isolation_index_v <- isolation_index_v + 2*total*component_size
     return isolation_index_v
+```
+
+**Normalized Isolation Index**
+```
+Normalized_Isolation_Index(G,v):
+    base_isolation_index <- Isolation_Index(G,None)
+    max_isolation_index <- G.node_count*(G.node_count-1)
+    H <- G.disconnect_node(v)
+    component_sizes <- Connected_Component(H).sizes
+    total <- G.node_count
+    isolation_index_v <- 0
+    for component_size in component_sizes
+           total <- total - component_size
+           isolation_index_v <- isolation_index_v + 2*total*component_size
+    normalized_isolation_index_v <- (isolation_index_v-base_isolation_index)/(max_isolation_index-base_isolation_index)
+    return normalized_isolation_index_v
 ```
 
 _________
