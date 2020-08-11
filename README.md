@@ -27,9 +27,11 @@ Isolation_Index(G,v):
 
 **Normalized Isolation Index**
 ```
+# precomputing the required values
+base_isolation_index <- Isolation_Index(G,None)
+max_isolation_index <- G.node_count*(G.node_count-1)
+
 Normalized_Isolation_Index(G,v):
-    base_isolation_index <- Isolation_Index(G,None)
-    max_isolation_index <- G.node_count*(G.node_count-1)
     H <- G.disconnect_node(v)
     component_sizes <- Connected_Component(H).sizes
     total <- G.node_count
