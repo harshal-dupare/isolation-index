@@ -90,23 +90,23 @@ ________
 
 ### Graphs
 
-<p float="center">
+<p float="left">
   <img src="/Results/iso%20complete.png" width="420" />
   <img src="/Results/vul%20complete.png" width="420" />
 </p>
-<p float="center">
+<p float="left">
   <img src="/Results/iso%20line.png" width="420" />
   <img src="/Results/vul%20line.png" width="420" /> 
 </p>
-<p float="center">
+<p float="left">
   <img src="/Results/iso%20star.png" width="420" />
   <img src="/Results/vul%20star.png" width="420" /> 
 </p>
-<p float="center">
+<p float="left">
   <img src="/Results/iso%20tree.png" width="420" />
   <img src="/Results/vul%20tree.png" width="420" /> 
 </p>
-<p float="center">
+<p float="left">
   <img src="/Results/iso%20ring.png" width="420" /> 
   <img src="/Results/vul%20ring.png" width="420" /> 
 </p>
