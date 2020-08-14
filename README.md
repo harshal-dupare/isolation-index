@@ -80,3 +80,35 @@ ________
 * The new proposed algorithm has complexity of `O( V+E )` per node which is very significant improvement on the previous algorithm which had complexity of `O( V*(E*logE + V) )` per node.
 
 reference for complexity : http://igraph.wikidot.com/algorithm-space-time-complexity
+________
+## Results on some simple graphs
+
+### Table
+<p float="center">
+    <img src="/Results/table.png" width="900" />
+</p>
+
+<br>
+
+### Graphs
+
+<p float="center">
+  <img src="/Results/iso%20complete.png" width="450" />
+  <img src="/Results/iso%20ring.png" width="450" /> 
+</p>
+<p float="center">
+  <img src="/Results/iso%20line.png" width="450" />
+  <img src="/Results/iso%20tree.png" width="450" /> 
+</p>
+<p float="center">
+  <img src="/Results/iso%20star.png" width="450" />
+  <img src="/Results/vul%20star.png" width="450" /> 
+</p>
+<p float="center">
+  <img src="/Results/vul%20line.png" width="450" />
+  <img src="/Results/vul%20tree.png" width="450" /> 
+</p>
+<p float="center">
+  <img src="/Results/vul%20complete.png" width="450" />
+  <img src="/Results/vul%20ring.png" width="450" /> 
+</p>
